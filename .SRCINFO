@@ -1,0 +1,50 @@
+pkgbase = linux-lts-librem
+	pkgver = 4.9.21
+	pkgrel = 1
+	url = https://www.kernel.org/
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = libelf
+	options = !strip
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.tar.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.9.tar.sign
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.9.21.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.9.21.sign
+	source = config
+	source = 90-linux.hook
+	source = linux-lts.preset
+	source = change-default-console-loglevel.patch
+	source = enable-byd-touchpad-detection.patch
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	sha256sums = 029098dcffab74875e086ae970e3828456838da6e0ba22ce3f64ef764f3d7f1a
+	sha256sums = SKIP
+	sha256sums = 3c7834d46cb193cf2ab00595eca1592c86ccc536b1b606d3d31eb2bf2109c28d
+	sha256sums = SKIP
+	sha256sums = 1defb028b00acd5cf3b19c853c01611dce880388fa838eb18cb66abcd12ba046
+	sha256sums = 834bd254b56ab71d73f59b3221f056c72f559553c04718e350ab2a3e2991afe0
+	sha256sums = 9e9e7ee3476e55e68390eda7e983fa18d44e76db5521f023fd2b388b1150bc40
+	sha256sums = 1256b241cd477b265a3c2d64bdc19ffe3c9bbcee82ea3994c590c2c76e767d99
+	sha256sums = 23f792a163a21a0b168565a62dbcfc77fd05a544a26088cd33d4dcb9ad5fe507
+
+pkgname = linux-lts-librem
+	pkgdesc = The Linux-lts-librem kernel and modules
+	install = linux-lts.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	backup = etc/mkinitcpio.d/linux-lts-librem.preset
+
+pkgname = linux-lts-librem-headers
+	pkgdesc = Header files and scripts for building modules for Linux-lts-librem kernel
+
+pkgname = linux-lts-librem-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-lts-librem kernel
+
