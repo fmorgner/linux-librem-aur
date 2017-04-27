@@ -3,7 +3,7 @@
 
 pkgbase=linux-lts-librem
 _srcname=linux-4.9
-pkgver=4.9.24
+pkgver=4.9.25
 pkgrel=1
 arch=('x86_64')
 url="https://www.kernel.org/"
@@ -20,7 +20,7 @@ source=(https://www.kernel.org/pub/linux/kernel/v4.x/${_srcname}.tar.{xz,sign}
 # https://www.kernel.org/pub/linux/kernel/v4.x/sha256sums.asc
 sha256sums=('029098dcffab74875e086ae970e3828456838da6e0ba22ce3f64ef764f3d7f1a'
             'SKIP'
-            '37897ce45426b8114c290dc52bc9de2034641b6dd9e33c7abba5224deb6e6e19'
+            '1ae6b863b87c7dd67ce075e1e1d56b8b3fd30c26243c0cd2f1ecc64cbe0ad219'
             'SKIP'
             '1defb028b00acd5cf3b19c853c01611dce880388fa838eb18cb66abcd12ba046'
             '834bd254b56ab71d73f59b3221f056c72f559553c04718e350ab2a3e2991afe0'
