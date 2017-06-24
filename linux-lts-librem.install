@@ -1,11 +1,10 @@
 # arg 1:  the new package version
 # arg 2:  the old package version
 
-KERNEL_NAME=-lts
+KERNEL_NAME=-lts-librem
 KERNEL_VERSION=
 
 post_install () {
-  # updating module dependencies
   echo ">>> Updating module dependencies. Please wait ..."
   depmod ${KERNEL_VERSION}
 }
@@ -27,7 +26,6 @@ post_upgrade() {
 }
 
 post_remove() {
-  # also remove the compat symlinks
   rm -f boot/initramfs-linux${KERNEL_NAME}.img
   rm -f boot/initramfs-linux${KERNEL_NAME}-fallback.img
 }
